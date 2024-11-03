@@ -10,7 +10,7 @@
             double weight = 190.5,
             string habitat = "Savannah",
             string diet = "Meat",
-            int teethLength =  7) : base(species, age, weight, habitat, diet)
+            int teethLength = 7) : base(species, age, weight, habitat, diet)
         {
             TeethLength = teethLength;
         }
