@@ -19,17 +19,17 @@
 
         public void Eat()
         {
-
+            Console.WriteLine($"{Species} is eating {Diet}");
         }
 
         public void Sleep()
         {
-
+            Console.WriteLine($"{Species} is sleeping");
         }
 
         public void Move()
         {
-
+            Console.WriteLine($"{Species} is moving");
         }
 
     }
