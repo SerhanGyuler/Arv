@@ -2,8 +2,10 @@
 {
     internal class LionLeopardSubClass : Lion
     {
+        // Property
         public string SpotPattern { get; set; } = "Black rosettes";
 
+        // Constructor
         public LionLeopardSubClass(
             string species = "Leopard",
             int age = 4,
@@ -13,17 +15,17 @@
             int teethLength = 7,
             string SpotPattern = "Black rosettes") : base(species, age, weight, habitat, diet, teethLength)
         {
-            SpotPattern = SpotPattern;
+            this.SpotPattern = SpotPattern;
         }
-
+        // Methods
         public void Hide()
         {
             Console.WriteLine("The leopard hides skillfully in the grass.");
         }
 
-        public void MakeSounds()
+        public override void MakeSound()
         {
-            Console.WriteLine("Groowwlll!");
+            Console.WriteLine("Groowwlll!!!");
         }
     }
 }

@@ -2,8 +2,10 @@
 {
     internal class Elephant : Animal
     {
+        // Property
         public int TrunkLength { get; set; } = 2;
 
+        // Constructor
         public Elephant(
             string species = "Elephant",
             int age = 10,
@@ -15,6 +17,7 @@
             TrunkLength = trunkLength;
         }
 
+        // Methods
         public void SprayWater()
         {
             Console.WriteLine("An elephant sprays water by using its trunk as a hose. " +
@@ -23,7 +26,7 @@
                 " or play, and they can spray water over their bodies or onto other elephants.");
         }
 
-        public void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("Trumpet!");
         }

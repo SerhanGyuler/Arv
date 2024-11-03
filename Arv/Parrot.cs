@@ -2,8 +2,10 @@
 {
     internal class Parrot : Animal
     {
+        // Property
         public double WingSpan { get; set; } = 0.5;
 
+        // Constructor
         public Parrot(
             string species = "Parrot",
             int age = 2,
@@ -16,12 +18,13 @@
             WingSpan = wingSpan;
         }
 
+        // Methods
         public void MimicSound()
         {
             Console.WriteLine("The parrot mimics sounds!");
         }
 
-        public void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("Squawk!");
         }
