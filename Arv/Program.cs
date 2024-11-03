@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            //Instanser av djur
+            // Instances of animals
             Parrot parrot = new Parrot();
             Lion lion = new Lion();
             Elephant elephant = new Elephant();
@@ -12,41 +12,49 @@
             LionLeopardSubClass leopard = new LionLeopardSubClass();
 
             Console.WriteLine("Animals sounds and properties\n");
+
             // Parrot
             parrot.MakeSound();
             parrot.MimicSound();
             parrot.Eat();
-            parrot.Sleep();
+            parrot.Live();
+            parrot.WeightAnimal();
 
             Console.WriteLine();
+
             // Lion
             lion.MakeSound();
             lion.Hunt();
             lion.Eat();
-            lion.Sleep();
-            lion.Move();
+            lion.Live();
+            lion.WeightAnimal();
 
             Console.WriteLine();
+
             // Elephant
             elephant.MakeSound();
             elephant.SprayWater();
             elephant.Eat();
-            elephant.Sleep();
-            elephant.Move();
+            elephant.Live();
+            elephant.WeightAnimal();
 
             Console.WriteLine();
+
             // Tiger
             tiger.MakeSound();
             tiger.Climb();
             tiger.Eat();
-            tiger.Sleep();
+            tiger.Live();
+            tiger.WeightAnimal();
 
             Console.WriteLine();
+
             // Leopard
             leopard.MakeSound();
             leopard.Hide();
             leopard.Eat();
-            leopard.Sleep();
+            leopard.Live();
+            leopard.WeightAnimal();
         }
     }
 }
